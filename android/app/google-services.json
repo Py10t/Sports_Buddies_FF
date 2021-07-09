@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "782718014258",
+    "project_id": "sportsbuddies-d617d",
+    "storage_bucket": "sportsbuddies-d617d.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:782718014258:android:16769af5880903c99dfd2b",
+        "android_client_info": {
+          "package_name": "com.flutterflow.sportsbuddies"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "782718014258-ia859dogftaf7u9sg8rjpc1ugiqrljat.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCYxL0tTo4iDsJ_MEkqIELmA4W6IPDvsGo"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "782718014258-ia859dogftaf7u9sg8rjpc1ugiqrljat.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
