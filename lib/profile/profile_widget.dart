@@ -1,5 +1,4 @@
 import '../account_settings/account_settings_widget.dart';
-import '../backend/backend.dart';
 import '../flutter_flow/flutter_flow_theme.dart';
 import '../flutter_flow/flutter_flow_util.dart';
 import 'package:flutter/material.dart';
@@ -75,94 +74,31 @@ class _ProfileWidgetState extends State<ProfileWidget> {
                                         ),
                                       ),
                                     ),
-                                    StreamBuilder<List<UsersRecord>>(
-                                      stream: queryUsersRecord(
-                                        queryBuilder: (usersRecord) =>
-                                            usersRecord.where('uid',
-                                                isEqualTo:
-                                                    'yrHdmxYOirpAQcL5FcvN'),
-                                        singleRecord: true,
+                                    Padding(
+                                      padding:
+                                          EdgeInsets.fromLTRB(24, 140, 0, 0),
+                                      child: Text(
+                                        '',
+                                        style: FlutterFlowTheme.title2.override(
+                                          fontFamily: 'Poppins',
+                                        ),
                                       ),
-                                      builder: (context, snapshot) {
-                                        // Customize what your widget looks like when it's loading.
-                                        if (!snapshot.hasData) {
-                                          return Center(
-                                              child:
-                                                  CircularProgressIndicator());
-                                        }
-                                        List<UsersRecord>
-                                            userNameUsersRecordList =
-                                            snapshot.data;
-                                        // Customize what your widget looks like with no query results.
-                                        if (snapshot.data.isEmpty) {
-                                          return Container(
-                                            height: 100,
-                                            child: Center(
-                                              child: Text('No results.'),
-                                            ),
-                                          );
-                                        }
-                                        final userNameUsersRecord =
-                                            userNameUsersRecordList.first;
-                                        return Padding(
-                                          padding: EdgeInsets.fromLTRB(
-                                              24, 140, 0, 0),
-                                          child: Text(
-                                            userNameUsersRecord.uid,
-                                            style: FlutterFlowTheme.title2
-                                                .override(
-                                              fontFamily: 'Poppins',
-                                            ),
-                                          ),
-                                        );
-                                      },
                                     ),
                                     Align(
                                       alignment: Alignment(-1, 0),
-                                      child: StreamBuilder<List<UsersRecord>>(
-                                        stream: queryUsersRecord(
-                                          queryBuilder: (usersRecord) =>
-                                              usersRecord.where('uid',
-                                                  isEqualTo:
-                                                      'yrHdmxYOirpAQcL5FcvN'),
-                                          singleRecord: true,
+                                      child: Padding(
+                                        padding:
+                                            EdgeInsets.fromLTRB(24, 174, 0, 0),
+                                        child: Text(
+                                          'User.name@domainname.com',
+                                          textAlign: TextAlign.start,
+                                          style: FlutterFlowTheme.bodyText1
+                                              .override(
+                                            fontFamily: 'Poppins',
+                                            color:
+                                                FlutterFlowTheme.secondaryColor,
+                                          ),
                                         ),
-                                        builder: (context, snapshot) {
-                                          // Customize what your widget looks like when it's loading.
-                                          if (!snapshot.hasData) {
-                                            return Center(
-                                                child:
-                                                    CircularProgressIndicator());
-                                          }
-                                          List<UsersRecord>
-                                              userEmailUsersRecordList =
-                                              snapshot.data;
-                                          // Customize what your widget looks like with no query results.
-                                          if (snapshot.data.isEmpty) {
-                                            return Container(
-                                              height: 100,
-                                              child: Center(
-                                                child: Text('No results.'),
-                                              ),
-                                            );
-                                          }
-                                          final userEmailUsersRecord =
-                                              userEmailUsersRecordList.first;
-                                          return Padding(
-                                            padding: EdgeInsets.fromLTRB(
-                                                24, 174, 0, 0),
-                                            child: Text(
-                                              userEmailUsersRecord.email,
-                                              textAlign: TextAlign.start,
-                                              style: FlutterFlowTheme.bodyText1
-                                                  .override(
-                                                fontFamily: 'Poppins',
-                                                color: FlutterFlowTheme
-                                                    .secondaryColor,
-                                              ),
-                                            ),
-                                          );
-                                        },
                                       ),
                                     )
                                   ],
